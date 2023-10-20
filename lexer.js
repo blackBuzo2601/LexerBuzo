@@ -13,9 +13,7 @@ fs.readFile('archivo.txt', 'utf8', (err, data) => {
    
     
     
-    //prueba prueba prueba prueba prueba prueba prueba
-    //otra prueba 
-    //una prueba mas
-    //xd
+    
+    
 });
  
