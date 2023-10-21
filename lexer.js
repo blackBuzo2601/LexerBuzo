@@ -18,7 +18,7 @@ var subtexto="";
 var bandera=0;
 
 for(let i=0;i<querySpliteado.length;i++){ //Bucle For General que recorre cada separacion del query
-    bandera=0;
+    bandera=0; //reiniciar bandera
     palabraActual=querySpliteado[i]; //Trabajar con cada palabra desde posicion 0
 
     for(let k=0;k<palabraActual.length;k++){
@@ -31,12 +31,9 @@ for(let i=0;i<querySpliteado.length;i++){ //Bucle For General que recorre cada s
             }
             bandera=1;
         }
-    }
+    }//fin sub for
+
     if(bandera==0){
         console.log(palabraActual);
     }
-
-
-
 }//fin for general  
-
