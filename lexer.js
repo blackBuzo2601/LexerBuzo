@@ -3,16 +3,14 @@
 //20 de Octubre de 2023
 //Ensenada B.C
 
-
-
 var query="SELECT edad correo,sueldo FROM usuarios WHERE nombre='juan, pedro'"; 
-var palabrasReservadas=["SELECT","DELETE","CREATE","UPDATE","ALTER","INSERT",",","="]; 
-
 
 //Variables que utilizare después
+const caracterVacio=" ";
 var querySpliteado=query.split(" "); //separar por espacios el Query
-let caracterVacio=" ";
-
+const caracteresDiferentes=",=*" //Otros caracters que va a evaluar
+const posicionUltimaLetra=query.length-1;
+const ultimaLetra=query[posicionUltimaLetra];
 var letraActual="";
 var formarPalabra="";
 
@@ -23,17 +21,12 @@ for(let i=0;i<query.length;i++){ //Bucle For que recorre cada letra del Query
     
     if(letraActual==caracterVacio){
         console.log(formarPalabra);
-        formarPalabra="";
+        formarPalabra=""; //reiniciar variable
     }
-    
 
-    
+}//fin for general
 
-}
-
-
-
-//Ideas: delimitador de palabras 
+console.log(formarPalabra); //ultima palabra
 
 
 
