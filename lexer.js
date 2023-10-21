@@ -12,22 +12,17 @@ const caracteresDiferentes=",=*" //Otros caracters que va a evaluar
 const posicionUltimaLetra=query.length-1;
 const ultimaLetra=query[posicionUltimaLetra];
 var letraActual="";
-var formarPalabra="";
+var palabraActual="";
 
-for(let i=0;i<query.length;i++){ //Bucle For que recorre cada letra del Query
 
-    letraActual=query[i];
-    formarPalabra=formarPalabra+letraActual;
-    
-    if(letraActual==caracterVacio){
-        console.log(formarPalabra);
-        formarPalabra=""; //reiniciar variable
+
+for(let i=0;i<querySpliteado.length;i++){ //Bucle For que recorre cada separacion del query
+    palabraActual=querySpliteado[i]; //trabajar con cada palabra
+
+    for(let j=0;j<palabraActual.length;j++){
+        
+        
+        
     }
-
+    
 }//fin for general
-
-console.log(formarPalabra); //ultima palabra
-
-
-
-
