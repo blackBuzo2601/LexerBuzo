@@ -1,13 +1,12 @@
 //Programa probado con Node JS 16.17.1
 //Elaborado por Buzo Zamora Elian
-//20 de Octubre de 2023
-//Ensenada B.C
+//20 de Octubre de 2023, Ensenada B.C
 
 var query="SELECT edad correo,sueldo FROM usuarios WHERE nombre= 'juan,pedro'"; 
                             //NOTA: Si 'Juan y pedro' tienen un espacio entre ellos,
                             //la consola imprime los valores separados correctamente.
                             //ejemplo: 'Juan, pedro'. 
-                            //Pero si están como 'Juan,pedro', los imprime bien raro
+                            //Pero si están como 'Juan,pedro', los imprime raro pues
                             //y es lo que me falta corregir
 
 //INICIALIZACION DE VARIABLES
