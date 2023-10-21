@@ -14,33 +14,26 @@ const ultimaLetra=query[posicionUltimaLetra];
 var letra="";
 var palabraActual="";
 var formarPalabra="";
-
-
-/*
-for(let i=0;i<querySpliteado.length;i++){ //Bucle For General que recorre cada separacion del query
-    palabraActual=querySpliteado[i];
-
-    for(let j=0;j<palabraActual.length;j++){
-        letra=palabraActual[j];
-        
-    
-
-
-    
-
-
-}//fin for general  */
-
-
-var textoConComas= querySpliteado[2];
-var prueba=querySpliteado[2].length;
 var subtexto="";
-for(let j=0;j<prueba;j++){ 
-    letra=textoConComas[j];
-    formarPalabra=formarPalabra+letra;
-    if(caracteresDiferentes.includes(letra)){
-        subtexto=textoConComas.split(letra);
-        console.log(subtexto[0]);
-        console.log(subtexto[1]);
+
+
+for(let i=0;i<querySpliteado.length;i++){ //Bucle For General que recorre cada separacion del query
+    
+    palabraActual=querySpliteado[i]; //Trabajar con cada palabra desde posicion 0
+
+    for(let k=0;k<palabraActual.length;k++){
+        letra=palabraActual[k];
+        formarPalabra=formarPalabra+letra;
+        if(caracteresDiferentes.includes(letra)){
+            console.log(letra);
+            subtexto=palabraActual.split(letra);
+            for(let e=0;e<subtexto.length;e++){
+                console.log(subtexto[e]);
+            }
+        }
+        
     }
-}
+
+
+}//fin for general  
+
