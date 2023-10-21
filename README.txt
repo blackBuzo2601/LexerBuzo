@@ -5,4 +5,7 @@ Para correr el programa:
 1. Terminal la abrimos.
 2. --> Node
 3. --> .load lexer.js   (si es que lo abrimos desde la misma carpeta. Sino sera 
-necesario seleccionar la ruta)
+necesario seleccionar la ruta)   
+
+
+
