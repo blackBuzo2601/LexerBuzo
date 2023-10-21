@@ -12,19 +12,28 @@ var palabrasReservadas=["SELECT","DELETE","CREATE","UPDATE","ALTER","INSERT",","
 //Variables que utilizare después
 var querySpliteado=query.split(" "); //separar por espacios el Query
 let caracterVacio=" ";
-var letraActual="";
 
+var letraActual="";
+var formarPalabra="";
 
 for(let i=0;i<query.length;i++){ //Bucle For que recorre cada letra del Query
 
-
-    if(query[i]==caracterVacio){
-        console.log("Vacio caracter detectado entonces en la posicion "+i);
+    letraActual=query[i];
+    formarPalabra=formarPalabra+letraActual;
+    
+    if(letraActual==caracterVacio){
+        console.log(formarPalabra);
+        formarPalabra="";
     }
+    
+
+    
 
 }
 
-//delimitador de palabras 
+
+
+//Ideas: delimitador de palabras 
 
 
 
