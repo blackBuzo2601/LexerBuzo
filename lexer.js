@@ -8,14 +8,14 @@ var query="SELECT edad correo,sueldo FROM usuarios WHERE nombre='juan, pedro'";
 //Variables que utilizare después
 const caracterVacio=" ";
 var querySpliteado=query.split(" "); //separar por espacios el Query
-const caracteresDiferentes=",=*" //Otros caracters que va a evaluar
+const caracteresDiferentes=",=" //Otros caracters que va a evaluar
 const posicionUltimaLetra=query.length-1;
 const ultimaLetra=query[posicionUltimaLetra];
 var letra="";
 var palabraActual="";
 var formarPalabra="";
 var subtexto="";
-
+var bandera=0;
 
 for(let i=0;i<querySpliteado.length;i++){ //Bucle For General que recorre cada separacion del query
     
@@ -23,13 +23,13 @@ for(let i=0;i<querySpliteado.length;i++){ //Bucle For General que recorre cada s
 
     for(let k=0;k<palabraActual.length;k++){
         letra=palabraActual[k];
-        formarPalabra=formarPalabra+letra;
         if(caracteresDiferentes.includes(letra)){
             console.log(letra);
             subtexto=palabraActual.split(letra);
             for(let e=0;e<subtexto.length;e++){
                 console.log(subtexto[e]);
             }
+            bandera=0;
         }
     }
 
