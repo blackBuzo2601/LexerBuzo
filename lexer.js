@@ -31,8 +31,8 @@ for(let i=0;i<querySpliteado.length;i++){ //Bucle For General que recorre cada s
                 console.log(subtexto[e]);
             }
         }
-        
     }
+
 
 
 }//fin for general  
